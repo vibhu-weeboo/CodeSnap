@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSnap - Beautiful Code Screenshots</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ CodeSnap</h1>
+            <p>Create Beautiful Code Screenshots in Seconds</p>
+        </header>
+
+        <div class="main-content">
+            <div class="editor-section">
+                <div class="controls">
+                    <select id="language-select">
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="cpp">C++</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="json">JSON</option>
+                        <option value="sql">SQL</option>
+                    </select>
+                    
+                    <select id="theme-select">
+                        <option value="dracula">Dracula</option>
+                        <option value="monokai">Monokai</option>
+                        <option value="tomorrow">Tomorrow Night</option>
+                        <option value="nord">Nord</option>
+                    </select>
+                    
+                    <label>
+                        <input type="checkbox" id="line-numbers" checked>
+                        Line Numbers
+                    </label>
+                </div>
+                
+                <textarea id="code-input" placeholder="Paste your code here...">// Welcome to CodeSnap!
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+greet('World');</textarea>
+            </div>
+
+            <div class="preview-section">
+                <div class="preview-controls">
+                    <button id="export-png" class="btn btn-primary">Download PNG</button>
+                    <button id="copy-image" class="btn btn-secondary">Copy to Clipboard</button>
+                </div>
+                
+                <div id="code-preview" class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="code-content">
+                        <pre><code id="code-output" class="language-javascript"></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by Vibhu | <a href="https://github.com/vibhu-weeboo/CodeSnap">GitHub</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
