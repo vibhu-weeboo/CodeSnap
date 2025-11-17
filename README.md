@@ -165,7 +165,6 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 **Vibhu**
 
 - GitHub: [@vibhu-weeboo](https://github.com/vibhu-weeboo)
-- Portfolio: [Your Portfolio Link]
 
 ---
 
