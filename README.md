@@ -185,6 +185,6 @@ Give a ⭐ if this project helped you!
 
 <div align="center">
 
-Made with ❤️ by Vibhu
+Made with ❤️ by Vibhu-weeboo
 
 </div>
